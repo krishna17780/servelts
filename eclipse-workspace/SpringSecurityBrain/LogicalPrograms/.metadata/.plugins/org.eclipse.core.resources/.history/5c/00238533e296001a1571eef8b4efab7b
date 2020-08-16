@@ -1,0 +1,14 @@
+package Logicalprograms;
+
+public class ReversestringEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+		String str="welcome java programming";
+		StringBuilder str1= new StringBuilder(str);
+		System.out.println(str1.reverse());
+		
+	}
+
+}

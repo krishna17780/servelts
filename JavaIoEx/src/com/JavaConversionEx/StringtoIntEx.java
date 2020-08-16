@@ -1,0 +1,14 @@
+package com.JavaConversionEx;
+
+public class StringtoIntEx {
+
+	public static void main(String[] args) {
+		String str = "200";
+		System.out.println(str + 100);
+		Integer in = Integer.parseInt(str);
+		System.out.println(str + 300);
+		System.out.println(in + 100);
+
+	}
+
+}

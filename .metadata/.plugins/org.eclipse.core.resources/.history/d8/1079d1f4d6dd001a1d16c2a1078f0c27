@@ -1,0 +1,32 @@
+package com.collection;
+
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class HashTableEx {
+
+	public static void main(String[] args) {
+		Hashtable<Integer, String> ht = new Hashtable<Integer, String>();
+		ht.put(1, "gopi");
+		ht.put(2, "krishna");
+		ht.put(3, "krishna");
+		for (Map.Entry ma : ht.entrySet()) {
+			System.out.println(ma.getValue());
+		}
+		Map<Integer, BookExa> ma = new Hashtable<Integer, BookExa>();
+		BookExa b1 = new BookExa(101, "Let us C", "Yashwant Kanetkar", "BPB", 8);
+		BookExa b2 = new BookExa(102, "Data Communications & Networking", "Forouzan", "Mc Graw Hill", 4);
+		BookExa b3 = new BookExa(103, "Operating System", "Galvin", "Wiley", 6);
+		// Adding Books to map
+		ma.put(1, b1);
+		ma.put(2, b2);
+		ma.put(3, b3);
+		
+		ma.entrySet().stream().map((Function<? super Entry<Integer, BookExa>, ? extends R>) ma.keySet()).forEach(System.out::println);
+	}
+
+}

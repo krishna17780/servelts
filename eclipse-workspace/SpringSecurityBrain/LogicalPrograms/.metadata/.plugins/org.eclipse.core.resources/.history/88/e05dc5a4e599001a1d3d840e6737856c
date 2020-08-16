@@ -1,0 +1,13 @@
+package logicicalPrograms;
+
+public class RemoveWhiteSpaceEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="wel come java home";
+		String whiteRemove= str.replaceAll(" ", "");
+		System.out.println(whiteRemove);
+
+	}
+
+}

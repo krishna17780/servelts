@@ -1,0 +1,11 @@
+package com.krishna.patterns.singleton;
+
+public class testEx {
+
+	public static void main(String[] args) {
+		DateUtillEx dt = DateUtillEx.getInstance();
+		DateUtillEx dt1 = DateUtillEx.getInstance();
+		System.out.println((dt == dt1));
+	}
+
+}

@@ -1,0 +1,15 @@
+package javaPrograms;
+
+public class ReverseEachWordEx {
+    public static String reversString(String str) {
+    	String words[]=str.split("\\s");
+    	String reversString="";
+		return str;
+    	
+    }
+
+	public static void main(String[] args) {
+
+	}
+
+}

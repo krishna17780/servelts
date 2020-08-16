@@ -1,0 +1,24 @@
+package com.collection;
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class HashmapEx {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> map = new HashMap<Integer, String>();
+		map.put(101, "Java");
+		map.put(102, "c");
+		map.put(103, "python");
+		map.put(104, "c++");
+		map.put(105, ".net");
+		map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()));
+		for (Entry<Integer, String> ent : map.entrySet()) {
+			System.out.println(ent.getKey() + " Technology " + ent.getValue());
+
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+package javaPrograms;
+
+public class CharAtEx {
+	public static void main(String[] args) {
+		String s1= "welcome java";
+		System.out.println(s1.hashCode());
+		String.join(s1, "code");
+		System.out.println(s1.hashCode());
+		
+	}
+
+}

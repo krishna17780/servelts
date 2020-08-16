@@ -1,0 +1,12 @@
+package javaPrograms;
+
+public class StringEx {
+
+	public static void main(String[] args) {
+		String str = "welcome";
+		System.out.println(str.hashCode());
+		str = str + "java";
+		System.out.println(str.hashCode());
+	}
+
+}

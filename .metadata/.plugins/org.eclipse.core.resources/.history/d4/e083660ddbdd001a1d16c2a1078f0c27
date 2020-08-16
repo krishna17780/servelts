@@ -1,0 +1,18 @@
+package com.collection.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class CollectionsAddall {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		Boolean b = Collections.addAll(list, "a", "b", "c", "d", "e");
+		System.out.println(list);
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package Logicalprograms;
+
+public class ReversestringEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       
+		String str="welcome java programming";
+		int len=str.length();
+
+		String rev=null;
+		/*
+		 * StringBuilder str1= new StringBuilder(str);
+		 * System.out.println(str1.reverse());
+		 * 
+		 * for (int i = len-1; i >=0; i--) { rev = rev+str.charAt(i); }Sys
+		 tem.out.println(rev);*/
+		
+		char[] ch=str.toCharArray();
+		int len1=ch.length;
+		for (int i = len1-1; i>=0; i--) {
+			
+			rev=rev+ch[i];
+		}
+		System.out.println(rev);
+	}
+
+}

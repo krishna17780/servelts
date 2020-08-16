@@ -1,0 +1,19 @@
+package Java8;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class FiletrByKeyEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Map<Integer, String> map= new HashMap<Integer, String>();
+      map.put(1, "red");
+      map.put(2, "green");
+      map.put(3, "yellow");
+      map.put(4, "white");
+   Map<Integer, String>  = map.entrySet().stream().filter(map1->map1.getKey().intValue()>=3).collect(Collectors.toMap(map1->map1., valueMapper))
+	}
+
+}

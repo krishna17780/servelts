@@ -1,0 +1,27 @@
+package javaEx;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class SortedEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<EmployeeEx> emps = new ArrayList<>();
+		emps.add(new EmployeeEx(10, "krishna", 29, 150000));
+		emps.add(new EmployeeEx(20, "kanth", 29, 320000));
+		emps.add(new EmployeeEx(30, "gopi", 31, 18000));
+		emps.add(new EmployeeEx(40, "hari priyanka", 19, 150000));
+		emps.add(new EmployeeEx(50, "bala", 30, 50000));
+		
+		Stream<Long> list=emps.stream().sorted(Comparator.comparing(EmployeeEx::getSalary)).map(EmployeeEx::getSalary);
+		System.out.println(list);
+	}
+
+}

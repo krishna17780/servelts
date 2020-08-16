@@ -1,0 +1,26 @@
+package com.collection;
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashhmEx1 {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> hm = new HashMap<Integer, String>();
+		hm.put(101, "java");
+		hm.put(null, "sjdjk");
+		hm.put(102, "c");
+		hm.put(103, "python");
+		hm.put( null, "kdjdnrn");
+		hm.put(104, "c++");
+		hm.put(105, "net");
+		for (Map.Entry hm1 : hm.entrySet()) {
+			System.out.println(hm1.getValue());
+			
+		}
+		hm.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).forEach(System.out::println);
+		
+	}
+
+}

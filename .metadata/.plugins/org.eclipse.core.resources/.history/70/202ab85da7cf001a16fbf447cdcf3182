@@ -1,0 +1,10 @@
+package javaPrograms;
+
+
+public class CharAtEx {
+	public static void main(String[] args) {
+		String s1= new String("welcome to java");
+		System.out.println(s1.hashCode());
+	}
+
+}

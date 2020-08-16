@@ -1,0 +1,28 @@
+package com.Iooperations;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import javax.swing.Spring;
+
+public class FileOutputEx {
+
+	public static void main(String[] args) throws Exception {
+		try {
+			FileOutputStream fos = new FileOutputStream("file.txt");
+			String str = "welcome to java:";
+			byte[] b = str.getBytes();
+			fos.write(b);
+			fos.close();
+			System.out.println("success:::");
+		} catch (FileNotFoundException e) {
+			throw new Exception("e");
+		}
+		FileInputStream fis = new FileInputStream("file.txt");
+		int st = fis.read();
+		System.out.println((char)st);
+
+	}
+
+}

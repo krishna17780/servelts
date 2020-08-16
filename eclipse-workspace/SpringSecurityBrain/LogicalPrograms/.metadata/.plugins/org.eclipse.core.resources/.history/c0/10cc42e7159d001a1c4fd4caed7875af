@@ -1,0 +1,14 @@
+package javaEx;
+
+interface Drawable {
+	void draw(String message);
+}
+
+public class LambdaEx {
+	public static void main(String[] args) {
+		Drawable drawable = (message) -> System.out.println(message);
+		drawable.draw("welcome draw:");
+
+	}
+
+}

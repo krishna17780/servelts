@@ -1,0 +1,19 @@
+package Logicalprograms;
+
+public class DuplicateElementsArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String arr[] = { "java", "c", "c++", "python", "java", "c" };
+		String str = arr[0];
+		for (int i = 0; i < arr.length; i++) {
+			str=arr[i];
+
+			if ((arr[i] == str) == true) {
+				System.out.println(arr[i]);
+			}
+
+		}
+	}
+
+}

@@ -1,0 +1,23 @@
+package logicicalPrograms;
+
+public class RemoveWhiteSpaceEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="wel come java home";
+		String stringWithoutSpaces = "";
+		//String whiteRemove= str.replaceAll(" ", "");
+		//System.out.println(whiteRemove);
+		char[] charArray =str.toCharArray();
+		for (int i = 0; i < str.length(); i++) {
+			if ((charArray[i]!=' ') && (charArray[i] != '\t')){
+				stringWithoutSpaces=stringWithoutSpaces+charArray[i];
+				
+			}
+			
+		}
+		System.out.println(stringWithoutSpaces);
+
+	}
+
+}

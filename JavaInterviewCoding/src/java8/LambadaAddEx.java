@@ -1,0 +1,17 @@
+package java8;
+
+interface inter {
+	public void add(int a, int b);
+}
+
+public class LambadaAddEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		inter addition = (a, b) -> System.out.println("the  sum: " + (a + b));
+		addition.add(10, 26);
+		addition.add(11, 26);
+
+	}
+
+}

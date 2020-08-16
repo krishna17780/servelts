@@ -1,0 +1,11 @@
+package com.JavaConversionEx;
+
+public class IntToLongEx {
+
+	public static void main(String[] args) {
+		int i = 20;
+		Long ln = new Long(i);
+		System.out.println(ln);
+	}
+
+}

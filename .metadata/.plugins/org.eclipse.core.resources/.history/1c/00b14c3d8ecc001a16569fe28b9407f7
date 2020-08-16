@@ -1,0 +1,20 @@
+package javaPrograms;
+
+public class palindromeCheckEx {
+	public static boolean isPlandrem(String str) {
+		StringBuilder st = new StringBuilder(str);
+		st.reverse();
+		String rev = st.toString();
+		if (str.equalsIgnoreCase(rev)) {
+			return true;
+		}
+		return false;
+
+	}
+
+	public static void main(String[] args) {
+		System.out.println(isPlandrem("welew"));
+
+	}
+
+}

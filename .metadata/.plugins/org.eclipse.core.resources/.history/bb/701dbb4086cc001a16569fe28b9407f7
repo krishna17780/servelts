@@ -1,0 +1,16 @@
+package javaPrograms;
+
+public class StringEx {
+
+	public static void main(String[] args) {
+		String str = "welcome";
+		System.out.println(str.hashCode());
+		str = str + "java";
+		System.out.println(str.hashCode());
+		StringBuffer str1 = new StringBuffer("Java coding");
+		System.out.println(str1);
+		str1.append("welcome");
+		System.out.println(str1);
+	}
+
+}

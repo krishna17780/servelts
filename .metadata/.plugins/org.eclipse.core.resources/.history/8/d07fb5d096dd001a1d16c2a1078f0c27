@@ -1,0 +1,16 @@
+package com.collection;
+
+import java.util.HashMap;
+
+public class HashhmEx1 {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> hm = new HashMap<Integer, String>();
+		hm.put(101, "java");
+		hm.put(102, "c");
+		hm.put(103, "python");
+		hm.put(104, "c++");
+		hm.put(105, "net");
+	}
+
+}

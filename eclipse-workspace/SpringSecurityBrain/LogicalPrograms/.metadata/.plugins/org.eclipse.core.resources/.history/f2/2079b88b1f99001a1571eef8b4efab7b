@@ -1,0 +1,14 @@
+package Logicalprograms;
+
+import java.util.Arrays;
+
+public class SortingelementsEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          
+		int a[]= {10,3,4,57,8,32};
+		System.out.println("Before sorting"+Arrays.toString(a));
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.krishna.patterns.singleton;
+
+public class DateUtillEx {
+	private static DateUtillEx instance;
+
+	// private static DateUtillEx instance = new DateUtillEx();
+
+	/*
+	 * static{ instance = new DateUtillEx(); }
+	 */
+
+	private DateUtillEx() {
+
+	}
+
+	public static  DateUtillEx getInstance() {
+		synchronized (DateUtillEx.class) {
+		if (instance == null) {
+			instance = new DateUtillEx();
+		}
+		}
+		return instance;
+	}
+
+}

@@ -1,0 +1,19 @@
+package javaEx;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SortedEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<EmployeeEx> emps = new ArrayList<>();
+		emps.add(new EmployeeEx(10, "krishna", 29, 150000));
+		emps.add(new EmployeeEx(20, "kanth", 29, 320000));
+		emps.add(new EmployeeEx(30, "gopi", 31, 18000));
+		emps.add(new EmployeeEx(40, "hari priyanka", 19, 150000));
+		emps.add(new EmployeeEx(50, "bala", 30, 50000));
+		emps.stream().sorted().map(EmployeeEx::getName).forEach(System.out::println);
+	}
+
+}

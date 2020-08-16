@@ -1,0 +1,21 @@
+package Logicalprograms;
+
+import java.util.Scanner;
+
+public class FiabonicSeriesEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Scanner sc = new Scanner(System.in);
+      int num=sc.nextInt();
+      int num1=0;
+      int num2=1;
+      while(num>0) {
+    	  int k=num1;
+    	  num1=num1+num2;
+    	  System.out.println(k);
+    	  num=num/10;
+      }
+	}
+
+}
